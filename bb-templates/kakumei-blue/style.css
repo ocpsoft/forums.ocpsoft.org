@@ -1,0 +1,127 @@
+/*
+Theme Name: Kakumei Blue
+Theme URI: http://bbpress.org/
+Description: The "revolutionized" new face of bbPress... in blue.
+Version: 1.0
+Author: <a href="http://avalonstar.com">Bryan Veloso</a> with updates by <a href="http://unlettered.org">Sam Bauers</a>
+Author URI: 
+*/
+
+
+@import url('../kakumei/style.css');
+
+a { color: #32689b; text-decoration: none; }
+a:hover { color: #001364; }
+#header a { color: #eee; text-decoration: none; }
+#header div.search input.submit:hover { color: #001364; }
+#header div.search input.submit:active { border-color: #001364; }
+#header #origin a:hover {color: #FF7700; background-color: transparent;}
+input#tagformsub:hover { color: #001364; }
+input#tagformsub:active { border-color: #001364; }
+.sticky { background: #adb9e1; }
+#thread li.pingback { background-color: #d8dcf2; border-color: #d8dcf2; }
+#thread li.pingback .threadpost { background-color: #d8dcf2; }
+#latest tr:hover, #forumlist tr:hover, #favorites tr:hover { background: #d8dcf2; }
+#profile-menu li a:hover { background: #d8dcf2; }
+a.prev.page-numbers:hover, a.next.page-numbers:hover { color: #001364; }
+p.submit input:hover { color: #001364; }
+p.submit input:active { border-color: #001364; }
+
+/* Custom */
+
+div.topicmeta {
+	width: 100%;
+}
+
+ul.topicmeta {
+	width: 100%;
+	position: relative;
+	list-style-type: none;
+	margin-top: 10px;
+}
+
+ul.topicmeta li {
+	margin-right: 20px;
+	margin-bottom: 5px;
+}
+
+.bb_attachments {
+	border-radius: 4px;
+	background-color: #ddffaa;
+	padding: 8px;
+}
+
+#thread div.bb_attachments ol li {
+	border-top: 0px;
+}
+
+.bb_attachments h3, .bb_attachments ol {
+	border-radius: 4px;
+	background-color: #ddffaa;
+}
+
+#resolution-flipper {
+	position: absolute;
+	right: -1px;
+	top: 70px;
+}
+
+div.infobox {
+	width: 100%;
+}
+
+#topic-info {
+	width: 100%;
+}
+
+#topic-info h2 {
+	display: block;
+	margin-right: 245px;
+}
+
+#topic_posts, #topic_voices {
+	visibility: hidden;
+}
+
+#topic-tags {
+	position: absolute;
+	right: 0;
+	top: -50;
+}
+
+#post-form-allowed-container {
+	width: 635px;
+	position: relative;
+	top: -40px;
+}
+
+#post-form-submit-container {
+	width: 735px;
+	z-index: 1000;
+}
+
+/* Customizations */
+.widget {
+        text-transform: uppercase;
+        margin-top: 20px;
+        width: 100%;
+}
+
+.widget > h2 {
+        color: #EE7733;
+}
+
+#title h1 {
+	font-size: 3.9em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-bottom: 15px;
+}
+
+#discussions h2 {
+	margin-bottom: 25px;
+}
+
+.sidebar-widget h3 {
+}
