@@ -46,7 +46,7 @@ bb_timer_start();
 //if(!array_key_exists("proto", $_REQUEST)) {
 
         require(dirname(__FILE__)."/../wp-blog-header.php");
-        wp_register_style('bbpress', './support/bb-templates/kakumei-blue/style.css');
+        wp_register_style('bbpress', '/support/bb-templates/kakumei-blue/style.css');
         wp_enqueue_style('bbpress');
 
         global $wp_head, $wp_footer;
