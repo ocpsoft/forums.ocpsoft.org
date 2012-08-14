@@ -1,6 +1,6 @@
 <?php bb_get_header(); ?>
 
-<div class="bbcrumb"><a href="<?php bb_uri(); ?>"><?php bb_option('name'); ?></a> &raquo; <a href="<?php user_profile_link( $user_id ); ?>"><?php echo get_user_display_name( $user_id ); ?></a> &raquo; <?php _e('Profile') ?></div>
+<div class="bbcrumb"><a href="<?php bb_uri(); ?>"><?php bb_option('name'); ?></a> &raquo; <a href="<?php user_profile_link( $user_id ); ?>"><?php echo get_user_display_name( $user_id ); ?></a> &raquo; <?php _e('Profile') ?><?php if(bb_current_user_can( 'moderate' )) : ?> &raquo; <a href="<?php profile_tab_link( $user_id, 'edit' ); ?>"><?php _e('Edit') ?></a>  <?php endif; ?></div>
 
 <div class="vcard" role="main">
 
