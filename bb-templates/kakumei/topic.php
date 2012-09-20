@@ -5,7 +5,7 @@
 
 <div id="topic-info">
 <span id="topic_labels"><?php bb_topic_labels(); ?></span>
-<h2<?php topic_class( 'topictitle' ); ?>><?php topic_title(); ?></h2>
+<h1<?php topic_class( 'topictitle' ); ?>> <?php forum_name($topic->forum_id); ?> - <?php topic_title(); ?></h1>
 <span id="topic_posts">(<?php topic_posts_link(); ?>)</span>
 <span id="topic_voices">(<?php printf( _n( '%s voice', '%s voices', bb_get_topic_voices() ), bb_get_topic_voices() ); ?>)</span>
 
