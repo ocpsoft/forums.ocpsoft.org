@@ -53,7 +53,6 @@ bb_timer_start();
 
         ob_start();
         wp_head();
-        $wp_head = ob_get_clean();
         wp_footer();
         $wp_footer = ob_get_clean();
         ob_clean();
