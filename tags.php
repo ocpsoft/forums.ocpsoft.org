@@ -12,6 +12,9 @@ if ( $tag_name && $tag ) :
 	bb_load_template( 'tag-single.php', array('tag', 'tag_name', 'topics'), $tag->tag_id );
 else :
 
-	bb_load_template( 'tags.php' );
+	// LB3 prevent spam tags from indexing
+	header("Status-Line: 302");
+	header("Location: /support/");
+	// bb_load_template( 'tags.php' );
 endif;
 ?>
