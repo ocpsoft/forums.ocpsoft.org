@@ -38,7 +38,10 @@
 
 </ol>
 <div class="clearit"><br style=" clear: both;" /></div>
+<?php /* 
 <p class="rss-link"><a href="<?php topic_rss_link(); ?>" class="rss-link"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr> feed for this topic') ?></a></p>
+*/ ?>
+
 <?php topic_pages( array( 'before' => '<div class="nav">', 'after' => '</div>' ) ); ?>
 <?php endif; ?>
 <?php if ( topic_is_open( $bb_post->topic_id ) ) : ?>
