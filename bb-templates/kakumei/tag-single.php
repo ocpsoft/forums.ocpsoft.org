@@ -26,9 +26,7 @@
 <?php endforeach; ?>
 </table>
 
-<?php /* 
 <p class="rss-link"><a href="<?php bb_tag_posts_rss_link(); ?>" class="rss-link"><?php _e('<abbr title="Really Simple Syndication">RSS</abbr> link for this tag') ?></a></p>
-*/ ?>
 
 <?php tag_pages( array( 'before' => '<div class="nav">', 'after' => '</div>' ) ); ?>
 
