@@ -158,4 +158,3 @@ function add_hooks() {
 	add_filter( 'bb_delete_post', 'sometimes_create_sitemap', 0);
 }
 ?>
-

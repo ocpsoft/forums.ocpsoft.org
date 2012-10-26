@@ -199,5 +199,3 @@ if ( file_exists( BB_PATH . 'bb-config.php') ) {
 
 if ( isset( $_GET['doit'] ) && 'bb-subscribe' == $_GET['doit'] )
 	require( BB_PATH . 'bb-includes/action.subscribe.php' );
-
-

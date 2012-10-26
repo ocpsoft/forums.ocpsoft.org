@@ -1,5 +1,4 @@
-<?php
-require('./bb-load.php');
+<?php require('./bb-load.php');
 
 // Determine the type of feed and the id of the object
 if ( isset($_GET['view']) || bb_get_path() == 'view' ) {

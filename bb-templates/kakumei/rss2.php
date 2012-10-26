@@ -1,9 +1,4 @@
-<?php
-header( 'Content-Type: text/xml; charset=UTF-8' );
-echo '<' . '?xml version="1.0" encoding="UTF-8"?' . '>' . "\n";
-bb_generator( 'comment' );
-?>
-<rss version="2.0"
+<?php header( 'HTTP/1.1 200 OK' ); header( 'Content-Type: text/xml; charset=UTF-8' ); echo '<' . '?xml version="1.0" encoding="UTF-8"?' . '>' . "\n"; bb_generator( 'comment' ); ?><rss version="2.0"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:atom="http://www.w3.org/2005/Atom">
