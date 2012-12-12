@@ -7,9 +7,7 @@ if ( bb_is_profile() ) {
 		$_head_profile_attr = ' profile="http://www.w3.org/2006/03/hcard"';
 	}
 }
-?>
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" <?php bb_language_attributes( '1.1' ); ?>>
 <head <?php echo $_head_profile_attr; ?>>
 <meta http-equiv="X-UA-Compatible" content="IE=8" />

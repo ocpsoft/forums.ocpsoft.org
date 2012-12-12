@@ -14,11 +14,9 @@
 
 // Die if PHP is not new enough
 
-
 if ( version_compare( PHP_VERSION, '4.3', '<' ) ) {
 	die( sprintf( 'Your server is running PHP version %s but bbPress requires at least 4.3', PHP_VERSION ) );
 }
-
 
 
 // Modify error reporting levels to exclude PHP notices
@@ -32,20 +30,21 @@ error_reporting(E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING);
  * @global int $bb_timestart Seconds and Microseconds added together from when function is called
  * @return bool Always returns true
  */
-function bb_timer_start()
-{
-	global $bb_timestart;
-	$mtime = explode( ' ', microtime() );
-	$bb_timestart = $mtime[1] + $mtime[0];
-	return true;
-}
-bb_timer_start();
+	function bb_timer_start()
+	{
+		global $bb_timestart;
+		$mtime = explode( ' ', microtime() );
+		$bb_timestart = $mtime[1] + $mtime[0];
+		return true;
+	}
+	bb_timer_start();
 
 
 // LB3 wrap forums in WP-header
-//if(!array_key_exists("proto", $_REQUEST)) {
 
+	define( 'WP_CACHE', false );
         require(dirname(__FILE__)."/../wp-blog-header.php");
+
         wp_register_style('bbpress', '/support/bb-templates/kakumei-blue/style.css');
         wp_enqueue_style('bbpress');
 
@@ -56,8 +55,6 @@ bb_timer_start();
         wp_footer();
         $wp_footer = ob_get_clean();
         ob_clean();
-
-//}
 
 
 // Server detection

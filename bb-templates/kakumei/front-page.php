@@ -44,7 +44,6 @@
 		<th><?php _e('Last Poster'); ?></th>
 		<th><?php _e('Freshness'); ?></th>
 	</tr>
-
 	<?php if ( $super_stickies ) : foreach ( $super_stickies as $topic ) : ?>
 	<tr<?php topic_class(); ?>>
 		<td><?php bb_topic_labels(); ?> <big><a href="<?php topic_link(); ?>"><?php topic_title(); ?></a></big><?php topic_page_links(); ?></td>
