@@ -41,7 +41,8 @@ Options -MultiViews
 
 	# forums
 	RewriteRule ^([^/]+)/page/([0-9]+)/?$ forum.php?id=$1&page=$2 [L,QSA]
-	RewriteRule ^([^/]+)/$ forum.php?id=$1 [L,QSA] # tailed '/' is mandatory for forum URIs! Props: Mohta
+	RewriteRule ^([^/]+)/$ forum.php?id=$1 [L,QSA] # trailing '/' is mandatory for forum URIs! Props: Mohta
+	RewriteRule ^((?!.*\.php.*)[^/]+)$ forum.php?id=$1 [L,QSA] # trailing '/' is mandatory for forum URIs! Props: Mohta
 
 	# topics
 	RewriteRule ^([^/]+)/([^/]+)/page/([0-9]+)/?$ topic.php?id=$2&page=$3 [L,QSA]

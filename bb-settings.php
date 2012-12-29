@@ -300,8 +300,6 @@ if ( function_exists( 'wp_cache_init' ) ) {
 	}
 }
 
-
-
 /**
  * Load mapping class for BackPress to store options
  */
